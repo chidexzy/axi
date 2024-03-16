@@ -1,3 +1,45 @@
-import os,sys
-os.system('git pull')
-import xtx_enc
+import os, sys, platform, time
+from time import sleep
+try:
+    import requests
+except:
+    os.system('pip install requests')
+def brand():
+	os.system('clear')
+	print("""
+██████╗ ██████╗ ███████╗██╗  ██╗
+██╔══██╗██╔══██╗██╔════╝╚██╗██╔╝
+██║  ██║██████╔╝█████╗   ╚███╔╝ 
+██║  ██║██╔══██╗██╔══╝   ██╔██╗ 
+██████╔╝██║  ██║███████╗██╔╝ ██╗
+╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+                                """)
+	time.sleep(1)
+	os.system('clear')
+	print("""
+██╗███████╗
+██║██╔════╝
+██║███████╗
+██║╚════██║
+██║███████║
+╚═╝╚══════╝
+           """)
+	time.sleep(1)
+	os.system('clear')
+	print("""
+██╗  ██╗██╗███╗   ██╗ ██████╗ 
+██║ ██╔╝██║████╗  ██║██╔════╝ 
+█████╔╝ ██║██╔██╗ ██║██║  ███╗
+██╔═██╗ ██║██║╚██╗██║██║   ██║
+██║  ██╗██║██║ ╚████║╚██████╔╝
+╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+                              """)
+	time.sleep(1)
+	os.system('clear')
+brand()
+bit = platform.architecture()[0]
+if bit == '64bit':
+    import xtx_enc
+elif bit == '32bit':
+    import xtx_enc
+
